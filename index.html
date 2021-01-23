@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Landing Page Design</title>
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+
+              <style>
+
+				body, html {
+				  height: 100%;
+				  margin: 0;
+				           }
+				.bg {
+				  /* The image used */
+				  
+
+				  /* Full height */
+				  height: 500%; 
+
+				  /* Center and scale the image nicely */
+				  background-position: center;
+				  background-repeat: no-repeat;
+				  background-size: cover;
+                   z-index: -1;
+				}
+				
+
+
+.marquee {
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            background: #fefefe;
+            color: #C70039;
+            border: 1px solid #4a4a4a;
+        }
+        
+        .marquee p {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            -moz-animation: scroll-left 2s linear infinite;
+            -webkit-animation: scroll-left 2s linear infinite;
+            animation: scroll-left 20s linear infinite;
+        }
+        
+        @-moz-keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+            }
+        }
+        
+        @-webkit-keyframes scroll-left {
+            0% {
+                -webkit-transform: translateX(100%);
+            }
+            100% {
+                -webkit-transform: translateX(-100%);
+            }
+        }
+       
+        @keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }
+
+
+
+
+               .tab { 
+            display: outline-block; 
+            margin-left: 300px; 
+        } 
+
+
+}
+
+
+
+        </style>
+
+
+    </head>
+
+
+	
+<body>
+
+	
+	   <div class="marquee">
+        <p> 28th Convocation - Photo Gallery - Medalists. <span class="tab"></span> Executive Development Program:Data Science with R and Python - Statistical Analytics. <span class="tab"></span>FMAACM 2020-Submission Details –Soft Computing(Springer)(SCI)-Studies in Fuzziness(Springer).<span class="tab"></span>MHRD ICT - Digital initiatives for students, teachers, professionals and informal learners.</p>
+        
+    </div>
+
+
+
+
+<div class="autoslide" id="opacity" style="max-width:500px">
+  <img class="mySlides" src="bus.jpg" style="width:100%" >
+  <img class="mySlides" src="convo.jpg" style="width:100%"> 
+  <img class="mySlides" src="sj.jpg" style="width:100%">
+  <img class="mySlides" src="road.jpg" style="width:100%" >
+  <img class="mySlides" src="umisarc.jpg" style="width:100%" >
+</div>
+
+}
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500); // Change image every 2 seconds
+}
+
+
+ 
+            function geeks() { 
+                document.getElementsByClassName("autoslide").style.opacity 
+                                                      = "1"; 
+            } 
+       
+
+
+</script>
+  
+
+
+       
+	<div class="open">
+			<div class="layer"></div>
+			<div class="layer"></div>
+		</div>
+		<section>
+			<div class="header">
+				<h1> <class="logo"><u>PONDICHERRY UNIVERSITY</u></h1></class="logo">
+				
+
+				<ul>
+				
+					<li>
+						<a href="#" >Home</a>
+					</li>
+					<li>
+						<a href="#">About</a>
+					</li>
+					
+					<li>
+						<a href="#">Admissions</a>
+					</li>
+					<li>
+						<a href="#">Gallery</a>
+					</li>
+					<li>
+						<a href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+			
+			<img src="logo.png" class="pic">
+
+			<ul class="sci">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+			<!--</ul>
+			<div class="element1"></div>
+			<div class="element2"></div>   -->
+		</section>
+
+ 
+
+
+
+       
+	</body>
+</html>
